@@ -1,0 +1,41 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <style>
+        #home-container{
+            display:grid;
+            grid-template-columns: 1fr 1fr 3fr;
+            gap: 1em;
+        }
+    </style>
+
+    <div id='home-container'>
+        <div class="houses">
+            {% for home in homes %}
+                <a href="{% url 'home' home.id %}">{{home}}</a>
+                <hr>
+            {% endfor %}
+            <a href="{% url 'create-home' %}">Create New Home</a>
+        </div>
+        <div class="rooms">
+            {% for room in rooms %}
+                <a href="{% url 'room' home_id room.id %}">{{room}}</a>
+                <p>{{room.light_set.all.count }}</p>
+                <hr>
+            {% endfor %}
+            {% if homes.count > 0 %}
+                <a href="{% url 'create-room' home_id %}">Create New Room</a>
+            {% endif %} 
+
+        </div>
+        <div class="rooms">
+            {% for l in lights %}
+                <p>{{l}}</p>
+                <hr>
+            {% endfor %}
+            {% if lights.count >= 0 and home_id and room_id%}
+                <a href="{% url 'create-light' home_id room_id %}">Create New Object</a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,20 @@
+<nav>
+    <header>
+        <h1>LOGO</h1>
+    </header>
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if request.user.is_authenticated %}
+        <a href="{% url 'logout' %}">LogOut</a>
+    {% else %}
+
+        <a href="{% url 'login' %}">LogIn</a>
+    {% endif %}
+
+</nav>

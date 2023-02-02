@@ -1,0 +1,28 @@
+table{
+    margin-top: 4em;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th,td{
+    padding: 1em;
+
+}
+
+th{
+    background-color: black;
+}
+
+#footer-row{
+    background-color: #222222;
+}
+
+tr:nth-child(odd){
+    background-color: #555555;
+}
+
+
+tr:nth-child(even){
+    background-color: #444444;
+}

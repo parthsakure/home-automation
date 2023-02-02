@@ -1,0 +1,51 @@
+
+.fa{
+    color: white;
+    transition: 0.3s;
+}
+.fa:hover{
+    text-shadow: 2px 2px 4px black;
+}
+
+.fa-success{
+    color: var(--success-border);
+}
+.fa-success:hover{
+    color: var(--success);
+}
+.fa-success-darker{
+    color: var(--success);
+}
+.fa-success-darker:hover{
+    color: var(--success-border);
+}
+
+.fa-bigger{
+    font-size: 1.3em;
+}
+
+.fa-smaller{
+    font-size: 0.8em;
+}
+
+
+.fa-danger{
+    color: var(--danger-border);
+}
+.fa-danger:hover{
+    color: var(--danger);
+}
+
+.fa-danger-darker{
+    color: var(--danger);
+}
+.fa-danger-darker:hover{
+    color: var(--danger-border);
+}
+
+.fa-primary{
+    color: var(--primary-border);
+}
+.fa-primary:hover{
+    color: var(--primary);
+}

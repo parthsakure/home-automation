@@ -1,0 +1,45 @@
+input{
+    display: block;
+    height: 2em;
+    width: 100%;
+    margin-top: 1em;
+    border: none;
+    border-bottom: 1px purple solid;
+}
+
+.form-group{
+    margin: 1em;
+    margin-top: 2em;
+}
+
+.form{
+    position: relative;
+    top:0%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 20em;
+    background-color: #222222aa;
+    border-radius: 2em;
+    border: 1px white solid;
+    padding: 2em;
+}
+
+label{
+    color: white;
+}
+
+.btn-login{
+    margin: 1em;
+    background-color: var(--color1);
+    color: white;
+    height: 2em;
+    width: 18em;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    border: none;
+}
+
+.btn-login:hover{
+    color: rgb(255, 253, 253);
+
+}

@@ -1,0 +1,97 @@
+.message{
+    height: 3.5em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    transition: 1s;
+}
+
+.message.success{
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border: 1px #badbcc solid;
+}
+
+.message.error{
+    color: #842029;
+    background-color: #f8d7da;
+    border: 1px #f5c2c7 solid;
+}
+
+
+
+.search{
+    position: relative;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.search .userinfo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.search .home{
+    border:1px white solid;
+    transition: 0.3s;
+}
+
+.search .home:hover{
+    border-radius: 2em;
+}
+
+.search .join,.search .remove{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.search .join:hover{
+    color: var(--success);
+}
+
+#search-input{
+    color: white;
+}
+.search .remove:hover{
+    color: var(--danger);
+}
+
+.search .home, .options,.user-request{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search span{
+    margin-right: 0.5em;
+}
+
+
+.close-btn{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+
+}
+
+.search {
+    border: 1px var(--success-bg) solid;
+    border-radius: 2em;
+    padding: 2em;
+}
+
+
+
+
+.username{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+
+
+.decline,.approve{
+    margin-left: 1em;
+    cursor: pointer;
+}

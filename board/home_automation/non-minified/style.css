@@ -1,0 +1,46 @@
+*{
+    margin: 0em;
+    padding: 0em;
+}
+
+body{
+    display: flex;
+    background-color: rgb(36, 39, 44);
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 40%;
+}
+
+.grp{
+    text-align: center;
+}
+
+label{
+    color: white;
+    text-align: center;
+}
+
+input{
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin: 2em;
+    border-bottom: 1px rgb(108, 179, 183) solid;
+}
+
+input.submit{
+    background-color: rgb(27, 89, 27);
+    color: white;
+    height: 2.5em;
+    border-radius: 0.5em;
+    width: 50%;
+    border: none;
+    transition: 0.5s;
+}
+
+input.submit:hover{
+    box-shadow: inset 0px -40px 5px 5px rgba(255, 255, 255, 0.2);
+}

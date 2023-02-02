@@ -1,0 +1,177 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2em;
+    justify-content: space-evenly;
+    background-color: #ffffff67;
+    border-radius: 2em;
+    margin-top: 2em;
+    padding: 2em;
+}
+
+.home-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-title{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.buttons-form{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-form div{
+    margin: 0.2em;
+}
+
+.buttons-home-delete .fa{
+    font-size: 3em;
+}
+
+.buttons-light-create .fa{
+    font-size: 2em;
+}
+
+
+.input-edit{
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin: 0em;
+}
+
+.input-edit.home-title{
+    border-bottom: 1px var(--success-bg) solid;
+    font-size: 1em
+}
+
+.post-btn{
+    background-color: transparent;
+    border:none; 
+    border-radius: 10%;
+    height: 100%;
+    /* aspect-ratio: 1/1; */
+}
+
+
+
+.room-container{
+    margin: 0em 1em;
+    width: 70%;
+}
+
+.label{
+    margin-top: 0.5em;
+    font-size: 0.8em;
+}
+
+
+.room{
+    width: 80%;
+    position: relative;
+    left: 0%;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.selector{
+    margin-top: 0.5em;
+}
+
+
+.room, .selector{
+    display: flex;
+    justify-content: left;
+    align-items:flex-start;
+}
+
+.delete.room{
+    justify-content: space-between;
+    margin: 0.5em;
+}
+
+.room label{
+    font-size: 0.8em;
+}
+
+
+.input-edit.room-title{
+    position: relative;
+    width: 90%;
+    border-bottom: 1px var(--primary-bg) solid;
+}
+
+
+.room .active {
+    font-weight: 600;
+    color: #c0c0c0;
+}
+
+.room-title{
+    color: var(--secondary);
+    transition: 0.5s;
+}
+
+.room-title:hover{
+    color: #a0a0a0;
+}
+
+.room-title.success{
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border: 1px #badbcc solid;
+}
+
+
+
+
+
+
+
+
+
+.lights{
+    display: grid; 
+    gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 2em;
+}
+
+
+.light-container{
+    display: flex;
+    justify-content: center;
+    gap:1em;
+}
+
+.light-title{
+    background-color: transparent;
+    border: none;
+    display: block;
+}
+
+.light-title i{
+    display: block;
+    font-size: 4em;
+}
+
+.light-title span{
+    font-size: 1.3em;
+    color: white;
+    font-weight: 100;
+    transition: 0.3s;
+}
+
+
+.light-title.light-active span{
+    font-weight: 700;
+}
+
+select.room-title {
+ margin-left: 1em;
+}
